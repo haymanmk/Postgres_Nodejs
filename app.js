@@ -106,7 +106,7 @@ function ReadTable(pool, tableName) {
     return SQLQuery(pool, query);
 }
 
-app.get('/', (req, res) => {
+app.get(__dirname + '/', (req, res) => {
     res.send(__dirname + '/index.html');
 });
 
