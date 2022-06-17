@@ -39,6 +39,10 @@ const insertProduct = "INSERT INTO Products\
     VALUES ('a1235', 'b1', 102);\
 ";
 
+const insertOrder = "INSERT INTO Orders\
+    VALUES ('a1235', 'b1', 10);\
+";
+
 SQLQuery(pool, createTable)
     .then((result) => console.log(result.rows))
     .catch((err) => console.log(err));
@@ -48,6 +52,10 @@ SQLQuery(pool, createOrder)
     .catch((err) => console.log(err));
 
 SQLQuery(pool, insertProduct)
+    .then((result) => console.log(result.rows))
+    .catch((err) => console.log(err));
+
+SQLQuery(pool, insertOrder)
     .then((result) => console.log(result.rows))
     .catch((err) => console.log(err));
 
