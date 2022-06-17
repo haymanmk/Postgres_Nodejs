@@ -106,11 +106,11 @@ function ReadTable(pool, tableName) {
     return SQLQuery(pool, query);
 }
 
-app.get(__dirname + '/', (req, res) => {
+app.get('/', (req, res) => {
     res.send(__dirname + '/index.html');
 });
 
-let port = process.env.port || 5000;
+let port = process.env.PORT || 5000;
 
 app.listen(port, () => {
     console.log('listen at ' + port);
