@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  },
+  "name": "postgres_nodejs",
+  "description": "Access the data stored in Postgres via nodejs server created in Heroku",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haymanmk/Postgres_Nodejs.git"
+  },
+  "author": "hayman chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haymanmk/Postgres_Nodejs/issues"
+  },
+  "homepage": "https://github.com/haymanmk/Postgres_Nodejs#readme"
+}
